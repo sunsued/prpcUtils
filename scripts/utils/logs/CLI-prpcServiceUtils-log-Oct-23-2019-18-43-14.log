@@ -1,0 +1,221 @@
+Buildfile: /home/vagrant/test83/prpcServiceUtils/scripts/utils/prpcServiceUtilsWrapper.xml
+
+-init:
+     [echo] ******************************************************************
+     [echo] Build date : ${pegaBuildDate.value} 
+     [echo] Pega7 platform version : 8.3.2 
+     [echo] ******************************************************************
+   [delete] Deleting directory /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated
+    [mkdir] Created dir: /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated
+[pega:propertyparser] Reading Properties from: /home/vagrant/test83/prpcServiceUtils/scripts/utils/prpcServiceUtils.properties
+[pega:propertyparser] export.async=true
+[pega:propertyparser] manageRestorePoints.restorePointLabel=
+[pega:propertyparser] user.temp.dir=
+[pega:propertyparser] import.commitRate=100
+[pega:propertyparser] hotfix.bypassSchema=false
+[pega:propertyparser] pega.rest.password=*****
+[pega:propertyparser] import.allowInheritedConnections=false
+[pega:propertyparser] pega.rest.response.type=json
+[pega:propertyparser] import.mode=import
+[pega:propertyparser] import.nofailonerror=false
+[pega:propertyparser] export.branchAppContext=
+[pega:propertyparser] hotfix.force=false
+[pega:propertyparser] import.importFromRepository=false
+[pega:propertyparser] export.applicationVersion=
+[pega:propertyparser] pega.rest.username=
+[pega:propertyparser] expose.reindexType=nonpega
+[pega:propertyparser] export.exportToRepository=false
+[pega:propertyparser] pega.rest.proxy.port=
+[pega:propertyparser] hotfix.async=true
+[pega:propertyparser] import.archive.path=
+[pega:propertyparser] import.compileLibraries=true
+[pega:propertyparser] rollback.downloadLogToFile=true
+[pega:propertyparser] import.insecureOperators=
+[pega:propertyparser] export.productName=
+[pega:propertyparser] expose.async=true
+[pega:propertyparser] updateAccessGroup.applicationVersion=
+[pega:propertyparser] import.preserveOrder=false
+[pega:propertyparser] getstatus.operationName=
+[pega:propertyparser] export.branchName=
+[pega:propertyparser] expose.startDate=
+[pega:propertyparser] export.productVersion=
+[pega:propertyparser] import.bypassInstanceMigration=false
+[pega:propertyparser] import.allowImportWithMissingDependencies=false
+[pega:propertyparser] rollback.async=true
+[pega:propertyparser] expose.reindex=true
+[pega:propertyparser] updateAccessGroup.applicationName=
+[pega:propertyparser] expose.includedClasses=
+[pega:propertyparser] updateAccessGroup.groupList=
+[pega:propertyparser] expose.endKey=
+[pega:propertyparser] expose.excludeDescendents=true
+[pega:propertyparser] expose.numOfThreads=1
+[pega:propertyparser] export.archiveName=
+[pega:propertyparser] getstatus.jobID=
+[pega:propertyparser] expose.excludedClasses=
+[pega:propertyparser] import.preferencespath=
+[pega:propertyparser] import.artifactType=
+[pega:propertyparser] expose.includeDescendents=true
+[pega:propertyparser] custom.jvm.args=
+[pega:propertyparser] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyparser] import.existingInstances=skip
+[pega:propertyparser] manageRestorePoints.restorePointName=
+[pega:propertyparser] import.async=true
+[pega:propertyparser] expose.endDate=
+[pega:propertyparser] rollback.restorePointName=
+[pega:propertyparser] hotfix.dlFilePath=
+[pega:propertyparser] updateDASS.filePath=
+[pega:propertyparser] import.skipBackup=false
+[pega:propertyparser] pega.rest.proxy.workstation=
+[pega:propertyparser] pega.rest.proxy.password=*****
+[pega:propertyparser] import.archivePath=
+[pega:propertyparser] import.bypassColumnPopulation=false
+[pega:propertyparser] hotfix.catalogPath=
+[pega:propertyparser] import.codesetName=Customer
+[pega:propertyparser] hotfix.operation=
+[pega:propertyparser] pega.rest.proxy.domain=
+[pega:propertyparser] expose.commitRate=100
+[pega:propertyparser] pega.rest.proxy.host=
+[pega:propertyparser] import.repositoryName=
+[pega:propertyparser] import.bypassSchemaChangesToDescendantTables=false
+[pega:propertyparser] rollback.action=SystemRollback
+[pega:propertyparser] export.applicationName=
+[pega:propertyparser] expose.startKey=
+[pega:propertyparser] manageRestorePoints.action=
+[pega:propertyparser] pega.rest.proxy.username=
+[pega:propertyparser] export.repositoryName=
+[pega:propertyparser] import.codesetVersion=06-01-01
+[pega:propertyparser] import.bypassSchema=
+    [mkdir] Created dir: /tmp/PegaInstallTemp-23-October-2019-18.43.15
+[pega:hasenoughspace] Found 23518128KB of free space on '/tmp'
+     [echo] *** JVM Arguments -Xmx1280m -Dlog4j.configurationFile=file:///%2Fhome%2Fvagrant%2Ftest83%2FprpcServiceUtils%2Fscripts%2Flib%2Flog4j2.xml -Dlogfile.timestamp=Oct-23-2019-18-43-14  ***
+
+-processInstances:
+     [echo] Performing expose on single instance(s)
+[pega:echoargline] arg line : -action expose -propFileDir /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir /tmp/PegaInstallTemp-23-October-2019-18.43.15 -artifactsDir logs -processFailStrategy FAIL_PROCESS_ON_SINGLE_SYSTEM_FAILURE
+[propertyfile] Creating new property file: /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated/generated-connection.properties
+[pega:propertyfilegenerator] Systems Configured
+[pega:propertyfilegenerator] DefaultSystem
+[pega:propertyfilegenerator] Generated /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated/DefaultSystem.prpcServiceUtils.properties for system DefaultSystem with properties:
+[pega:propertyfilegenerator] import.bypassSchema=
+[pega:propertyfilegenerator] import.codesetVersion=06-01-01
+[pega:propertyfilegenerator] export.repositoryName=
+[pega:propertyfilegenerator] pega.rest.proxy.username=
+[pega:propertyfilegenerator] manageRestorePoints.action=
+[pega:propertyfilegenerator] expose.startKey=
+[pega:propertyfilegenerator] export.applicationName=
+[pega:propertyfilegenerator] rollback.action=SystemRollback
+[pega:propertyfilegenerator] import.bypassSchemaChangesToDescendantTables=false
+[pega:propertyfilegenerator] import.repositoryName=
+[pega:propertyfilegenerator] pega.rest.proxy.host=
+[pega:propertyfilegenerator] expose.commitRate=100
+[pega:propertyfilegenerator] pega.rest.proxy.domain=
+[pega:propertyfilegenerator] hotfix.catalogPath=
+[pega:propertyfilegenerator] import.codesetName=Customer
+[pega:propertyfilegenerator] hotfix.operation=
+[pega:propertyfilegenerator] import.bypassColumnPopulation=false
+[pega:propertyfilegenerator] import.archivePath=
+[pega:propertyfilegenerator] import.skipBackup=false
+[pega:propertyfilegenerator] pega.rest.proxy.workstation=
+[pega:propertyfilegenerator] pega.rest.proxy.password=*****
+[pega:propertyfilegenerator] updateDASS.filePath=
+[pega:propertyfilegenerator] hotfix.dlFilePath=
+[pega:propertyfilegenerator] rollback.restorePointName=
+[pega:propertyfilegenerator] expose.endDate=
+[pega:propertyfilegenerator] import.async=true
+[pega:propertyfilegenerator] manageRestorePoints.restorePointName=
+[pega:propertyfilegenerator] import.existingInstances=skip
+[pega:propertyfilegenerator] pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+[pega:propertyfilegenerator] custom.jvm.args=
+[pega:propertyfilegenerator] import.preferencespath=
+[pega:propertyfilegenerator] import.artifactType=
+[pega:propertyfilegenerator] expose.includeDescendents=true
+[pega:propertyfilegenerator] expose.excludedClasses=
+[pega:propertyfilegenerator] getstatus.jobID=
+[pega:propertyfilegenerator] export.archiveName=
+[pega:propertyfilegenerator] expose.numOfThreads=1
+[pega:propertyfilegenerator] expose.excludeDescendents=true
+[pega:propertyfilegenerator] updateAccessGroup.groupList=
+[pega:propertyfilegenerator] expose.endKey=
+[pega:propertyfilegenerator] expose.includedClasses=
+[pega:propertyfilegenerator] updateAccessGroup.applicationName=
+[pega:propertyfilegenerator] rollback.async=true
+[pega:propertyfilegenerator] expose.reindex=true
+[pega:propertyfilegenerator] import.allowImportWithMissingDependencies=false
+[pega:propertyfilegenerator] export.productVersion=
+[pega:propertyfilegenerator] import.bypassInstanceMigration=false
+[pega:propertyfilegenerator] expose.startDate=
+[pega:propertyfilegenerator] export.branchName=
+[pega:propertyfilegenerator] getstatus.operationName=
+[pega:propertyfilegenerator] import.preserveOrder=false
+[pega:propertyfilegenerator] updateAccessGroup.applicationVersion=
+[pega:propertyfilegenerator] import.insecureOperators=
+[pega:propertyfilegenerator] rollback.downloadLogToFile=true
+[pega:propertyfilegenerator] export.productName=
+[pega:propertyfilegenerator] expose.async=true
+[pega:propertyfilegenerator] import.compileLibraries=true
+[pega:propertyfilegenerator] import.archive.path=
+[pega:propertyfilegenerator] hotfix.async=true
+[pega:propertyfilegenerator] export.exportToRepository=false
+[pega:propertyfilegenerator] pega.rest.proxy.port=
+[pega:propertyfilegenerator] expose.reindexType=nonpega
+[pega:propertyfilegenerator] pega.rest.username=
+[pega:propertyfilegenerator] export.applicationVersion=
+[pega:propertyfilegenerator] import.importFromRepository=false
+[pega:propertyfilegenerator] hotfix.force=false
+[pega:propertyfilegenerator] export.branchAppContext=
+[pega:propertyfilegenerator] import.nofailonerror=false
+[pega:propertyfilegenerator] pega.rest.response.type=json
+[pega:propertyfilegenerator] import.mode=import
+[pega:propertyfilegenerator] hotfix.bypassSchema=false
+[pega:propertyfilegenerator] pega.rest.password=*****
+[pega:propertyfilegenerator] import.allowInheritedConnections=false
+[pega:propertyfilegenerator] import.commitRate=100
+[pega:propertyfilegenerator] user.temp.dir=
+[pega:propertyfilegenerator] manageRestorePoints.restorePointLabel=
+[pega:propertyfilegenerator] export.async=true
+[pega:propertyfilegenerator] 
+
+_callService:
+     [java] 18:43:16.213 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - -action expose -propFileDir /home/vagrant/test83/prpcServiceUtils/scripts/utils/generated -poolSize ${prpcserviceutils.pool.size} -requestTimeOut ${prpcserviceutils.request.timeout} -tempDir /tmp/PegaInstallTemp-23-October-2019-18.43.15 -artifactsDir logs -processFailStrategy FAIL_PROCESS_ON_SINGLE_SYSTEM_FAILURE 
+     [java] 18:43:16.217 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Thread Pool Size to default 5
+     [java] 18:43:16.217 [main] INFO  [a.pegarules.serviceclient.ClientSettings] - Setting Request TimeOut to default 300
+     [java] 18:43:16.226 [main] INFO  [.pega.pegarules.serviceclient.ClientMain] - Initializing client Current Operation = EXPOSE; Thread Pool Size = 5; RequestTimeOut = 300; TemporaryDirectory = /tmp/PegaInstallTemp-23-October-2019-18.43.15; ProcessFailStrategy = FAIL_PROCESS_ON_SINGLE_SYSTEM_FAILURE
+     [java] 18:43:16.229 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing Request Manager
+     [java] 18:43:16.230 [main] INFO  [viceclient.requestmanager.RequestManager] - Initializing ExecutorService with pool size 5 
+     [java] 18:43:16.234 [main] INFO  [viceclient.requestmanager.RequestManager] - Performing EXPOSE with params [System Name = DefaultSystem Parameters = {export.async=true, manageRestorePoints.restorePointLabel=, user.temp.dir=, import.commitRate=100, hotfix.bypassSchema=false, pega.rest.password=*****, import.allowInheritedConnections=false, pega.rest.response.type=json, import.mode=import, import.nofailonerror=false, export.branchAppContext=, hotfix.force=false, import.importFromRepository=false, export.applicationVersion=, pega.rest.username=, expose.reindexType=nonpega, export.exportToRepository=false, pega.rest.proxy.port=, hotfix.async=true, import.archive.path=, import.compileLibraries=true, import.insecureOperators=, rollback.downloadLogToFile=true, export.productName=, expose.async=true, updateAccessGroup.applicationVersion=, import.preserveOrder=false, getstatus.operationName=, export.branchName=, expose.startDate=, export.productVersion=, import.bypassInstanceMigration=false, import.allowImportWithMissingDependencies=false, rollback.async=true, expose.reindex=true, updateAccessGroup.applicationName=, expose.includedClasses=, updateAccessGroup.groupList=, expose.endKey=, expose.excludeDescendents=true, expose.numOfThreads=1, export.archiveName=, getstatus.jobID=, expose.excludedClasses=, import.preferencespath=, import.artifactType=, expose.includeDescendents=true, custom.jvm.args=, pega.rest.server.url=http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>, import.existingInstances=skip, manageRestorePoints.restorePointName=, import.async=true, expose.endDate=, rollback.restorePointName=, hotfix.dlFilePath=, updateDASS.filePath=, import.skipBackup=false, pega.rest.proxy.workstation=, pega.rest.proxy.password=*****, import.archivePath=, import.bypassColumnPopulation=false, hotfix.catalogPath=, import.codesetName=Customer, hotfix.operation=, pega.rest.proxy.domain=, expose.commitRate=100, pega.rest.proxy.host=, import.repositoryName=, import.bypassSchemaChangesToDescendantTables=false, rollback.action=SystemRollback, export.applicationName=, expose.startKey=, manageRestorePoints.action=, pega.rest.proxy.username=, export.repositoryName=, import.codesetVersion=06-01-01, import.bypassSchema=}]
+     [java] 18:43:16.242 [main] INFO  [viceclient.requestmanager.RequestManager] - Request on system DefaultSystem failed
+     [java] 18:43:16.242 [main] ERROR [viceclient.requestmanager.RequestManager] - Request on system DefaultSystem failed
+     [java] java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid URL provided for system DefaultSystem URL:http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+     [java] 	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_191]
+     [java] 	at java.util.concurrent.FutureTask.get(FutureTask.java:206) ~[?:1.8.0_191]
+     [java] 	at com.pega.pegarules.serviceclient.requestmanager.RequestManager.processResponse(RequestManager.java:156) [prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.requestmanager.RequestManager.doOperation(RequestManager.java:141) [prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.executeAndHandleResponse(ClientMain.java:82) [prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.main(ClientMain.java:57) [prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] Caused by: java.lang.IllegalArgumentException: Invalid URL provided for system DefaultSystem URL:http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+     [java] 	at com.pega.pegarules.serviceclient.operation.AbstractOperation.parseURL(AbstractOperation.java:97) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.operation.AbstractOperation.validateInputParameters(AbstractOperation.java:229) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.rest.RestRequest.validateInputParameters(RestRequest.java:41) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.rest.AbstractRestRequest.execute(AbstractRestRequest.java:56) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.rest.AbstractRestRequest.execute(AbstractRestRequest.java:31) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.request.AbstractRequest.call(AbstractRequest.java:62) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at com.pega.pegarules.serviceclient.request.AbstractRequest.call(AbstractRequest.java:30) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+     [java] 	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_191]
+     [java] 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+     [java] 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+     [java] 	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
+     [java] 
+     [java]                                        FAILED JOBS
+     [java] --------------------------------------------------------------------------------------------
+     [java] 
+     [java] System Name         : DefaultSystem                                                                                       
+     [java] Job ID              :                                                                                                     
+     [java] Status              :                                                                                                     
+     [java] Error Messages      : REQUEST_VALIDATION_ERROR java.lang.IllegalArgumentException: Invalid URL provided for system DefaultSystem URL:http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>               
+     [java] --------------------------------------------------------------------------------------------
+     [java] 18:43:16.267 [main] INFO  [viceclient.requestmanager.RequestManager] - Shutting down executor service
+     [java] 18:43:16.267 [main] INFO  [viceclient.requestmanager.RequestManager] - Executor Service shutdown completed
+     [java] Exception in thread "main" Operation EXPOSE failed on DefaultSystem,
+     [java] 	at com.pega.pegarules.serviceclient.FailProcessOnSingleSystemFailure.reportStatus(FailProcessOnSingleSystemFailure.java:26)
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.executeAndHandleResponse(ClientMain.java:92)
+     [java] 	at com.pega.pegarules.serviceclient.ClientMain.main(ClientMain.java:57)

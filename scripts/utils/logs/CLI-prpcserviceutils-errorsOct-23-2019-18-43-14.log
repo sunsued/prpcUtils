@@ -1,0 +1,20 @@
+2019-10-23 18:43:16.242 [main] ERROR [viceclient.requestmanager.RequestManager] - Request on system DefaultSystem failed
+java.util.concurrent.ExecutionException: java.lang.IllegalArgumentException: Invalid URL provided for system DefaultSystem URL:http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+	at java.util.concurrent.FutureTask.report(FutureTask.java:122) ~[?:1.8.0_191]
+	at java.util.concurrent.FutureTask.get(FutureTask.java:206) ~[?:1.8.0_191]
+	at com.pega.pegarules.serviceclient.requestmanager.RequestManager.processResponse(RequestManager.java:156) [prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.requestmanager.RequestManager.doOperation(RequestManager.java:141) [prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.ClientMain.executeAndHandleResponse(ClientMain.java:82) [prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.ClientMain.main(ClientMain.java:57) [prdeploy.jar:0.0.1-SNAPSHOT]
+Caused by: java.lang.IllegalArgumentException: Invalid URL provided for system DefaultSystem URL:http://<host name>:<port number>/<context>/PRRestService/<tenant url hash>
+	at com.pega.pegarules.serviceclient.operation.AbstractOperation.parseURL(AbstractOperation.java:97) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.operation.AbstractOperation.validateInputParameters(AbstractOperation.java:229) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.rest.RestRequest.validateInputParameters(RestRequest.java:41) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.rest.AbstractRestRequest.execute(AbstractRestRequest.java:56) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.rest.AbstractRestRequest.execute(AbstractRestRequest.java:31) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.request.AbstractRequest.call(AbstractRequest.java:62) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at com.pega.pegarules.serviceclient.request.AbstractRequest.call(AbstractRequest.java:30) ~[prdeploy.jar:0.0.1-SNAPSHOT]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) ~[?:1.8.0_191]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) ~[?:1.8.0_191]
+	at java.lang.Thread.run(Thread.java:748) ~[?:1.8.0_191]
